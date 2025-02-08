@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<style>
+  html {
+  scroll-behavior: smooth;
+  }
+  *{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+  }
+  .brew{
+    background: url("https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header{
+    color: white;
+  }
+  .fs-4{
+    color: white;
+  }
+  ul{
+    color: white;
+  }
+  .nav nav-pills{
+    display: flex;
+    justify-content:center;
+    color: white;
+  }
+  .nav-link {
+    color: white !important; /* Ensures the color overrides other styles */
+    text-decoration: none; /* Removes underline */
+  }
+
+  .nav-link:hover {
+    color: yellow !important; /* Changes color on hover */
+  }
+  p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 4px;
+    align-content: center;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-clip h1{
+    color: white;
+  }
+  h3{
+    padding-top: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  } 
+  .card-text{
+    color: black;
+  }
+  .lead{
+    color: black;
+  }
+  .Contact h1{
+    color: white;
+    font-weight: bold;
+  }
+  .card{
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    bottom: 0px;
+	  Opacity: 1px;
+		background-color: rgba(0,0,0,0.1);
+  }
+
+  .text-clip, .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about-section {
+  background-color: pink; /* Light gray background */
+  padding: 50px 0; /* Add some padding for spacing */
+  }
+ .Contact div {
+  width: 100%;
+  max-width: 500px; /* Limits the width for better UI */
+  margin: 0 auto; /* Centers the input fields */
+  }
+  .Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+  width: 100%;
+  }
+
+  .Contact input {
+  width: 100%;  /* Make input fields span the full width */
+  max-width: 600px;  /* Optional: Limits width for better UI */
+  padding: 12px;  /* Adds spacing inside */
+  margin-bottom: 15px;  /* Adds space between inputs */
+  border: 1px solid #ccc;  /* Adds a subtle border */
+  border-radius: 5px;  /* Rounds corners slightly */
+  font-size: 16px;  /* Increases text size */
+  }
+
+</style>
+<body>
+    <div class="brew">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-4">brewed Awakening</span>
+        </a>
+
+        <ul class="nav">
+          <li class="nav-item"><a href="#Menu" class="nav-link" aria-current="page">Menu</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </header>
+      <div id="Menu" class="text-clip">
+        <h1>Savor the Art of brewing</h1>
+        <p>Taste the refinement in every cup</p>
+        <button class="btn btn-warning rounded-pill px-3" type="button">View Menu</button>
+      </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <h3>Our Menu</h3>
+        </div>
+        <div class="card-group gap-4 border-bottom">
+        <div class="card">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.g_6Ku2vex82kpkmuFCOcHAHaE0&pid=Api&P=0&h=180" class="card-img-top" alt="caffe-espresso">
+            <div class="card-body">
+                <h5 class="card-title">Caffe-espresso</h5>
+                <p class="card-text">
+                A shot of espresso isn’t just coffee—it’s liquid motivation in a cup. ☕⚡</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ELPot3RyxbJskJ2MNgfu7wHaEo&pid=Api&P=0&h=180" class="card-img-top" alt="cappuccino">
+            <div class="card-body">
+                <h5 class="card-title">Cappuccino</h5>
+                <p class="card-text">"A cup of cappuccino is not just coffee—it’s a warm hug for your soul, a moment of bliss in every sip." ☕✨</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="http://recipesnobs.com/wp-content/uploads/2016/05/coffee-latte.jpg" class="card-img-top" alt="latte">
+            <div class="card-body">
+                <h5 class="card-title">Latte</h5>
+                <p class="card-text">A latte is more than just coffee—it’s a warm hug in a cup, blending rich espresso with velvety milk for the perfect comforting boost. ☕✨</p>
+            </div>
+        </div>
+        </div>
+        <div class="breakfast">
+            <h3>Breakfast Menu</h3>
+        </div>
+        <div class="card-group gap-4 border-bottom">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?cs=srgb&dl=basil-blur-close-up-1437267.jpg&fm=jpg" class="card-img-top" alt="pasta">
+            <div class="card-body">
+                <h5 class="card-title">Pasta</h5>
+                <p class="card-text">
+                    "Because every twirl of pasta is a little bite of happiness, bringing comfort, flavor, and joy to the soul. 🍝✨"</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.W5A88VvmwibfNW2EqDynwwHaE0&pid=Api&P=0&h=180" class="card-img-top" alt="burger">
+            <div class="card-body">
+                <h5 class="card-title">Burger</h5>
+                <p class="card-text">"Because every bite of a burger is a perfect blend of juicy, cheesy, and crispy happiness!" 🍔✨</p>
+            </div>
+        </div>
+        <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.1MrLjG-FqoTSLZ2zDg1fEAHaGe&pid=Api&P=0&h=180" class="card-img-top" alt="sandwich">
+            <div class="card-body">
+                <h5 class="card-title">Sandwich</h5>
+                <p class="card-text">"A sandwich is the perfect blend of taste and convenience, turning simple ingredients into a delicious meal" 🥪✨</p>
+            </div>
+        </div>
+        </div>
+        <div id="about" class="about-section">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.48rEiGiAu9QbjcdpR_mDKwHaEo&pid=Api&P=0&h=180" class="d-block mx-lg-auto img-fluid" alt="Coffeee" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6 border-bottom">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h1>
+                <p class="lead">  
+                    Welcome to Amigos Coffee House! ☕🍽  
+                    We take pride in serving a variety of rich, flavorful coffees alongside delicious breakfast options to start your day right. Whether you're in the mood for a classic espresso, a creamy latte, or a hearty breakfast, we’ve got something for everyone.  
+                    Come in, relax, and enjoy a warm cup of coffee with great food in a cozy atmosphere! 😊
+                </p>
+            </div>
+        </div>
+        </div>
+        <div id="contact" class="Contact border-bottom">
+            <h1>Contact Us</h1>
+        <div>
+            <input type="text" placeholder="Your name">
+        </div><br>
+        <div>
+            <input type="email" placeholder="Your email">
+        </div><br>
+        <div>
+            <input type="tel" placeholder="Your Message">
+        </div>
+            <button class="btn btn-warning rounded-pill px-3" type="button">Submit</button>
+        </div><br>          
+        <footer>
+            <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        </footer>
+  </div>
+</body>
+</html>
